@@ -1,16 +1,3 @@
-// console.log("hello");
-
-// function addon() {
-
-//     var search = document.getElementById("Addin");
-
-//     let apiKey ="dcbc738b";
-//     let urlData = (`http://www.omdbapi.com/?apikey=${apiKey}&t=${search.value}`);
-
-//     console.log(search.value);
-//     console.log(urlData);
-// }
-
 // first take search 
 
 window.onload = function () {
