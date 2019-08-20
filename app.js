@@ -11,10 +11,10 @@ window.onload = function () {
 
 function getmovies(searchTextall){
    
-    var apiKey ="dcbc738b";
-    var urlData = "http://www.omdbapi.com/?apikey=" + apiKey + "&t=" + searchTextall; 
+    let apiKey ="dcbc738b";
+    let urlData = "http://www.omdbapi.com/?apikey=" + apiKey + "&t=" + searchTextall; 
     console.log(urlData);
-    var OurRequest = new XMLHttpRequest();
+    let OurRequest = new XMLHttpRequest();
     OurRequest.open('GET', urlData)
     OurRequest.onload = function() {
     let ourdata = JSON.parse(OurRequest.responseText);
