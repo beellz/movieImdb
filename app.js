@@ -6,8 +6,19 @@ window.onload = function () {
        let searchTextall = document.getElementById("searchText").value;
         getmovies(searchTextall);
         e.preventDefault();
+       
     }
 }
+
+
+function hidden() {
+    var x = document.querySelector("hidden");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 function getmovies(searchTextall){
    
@@ -27,6 +38,7 @@ function getmovies(searchTextall){
 //     console.log(response.json);
 // })
 
+
 fetch(urlData)
 .then(response => response.json())
 .then(data => {
@@ -35,15 +47,17 @@ fetch(urlData)
     console.log(data.Poster);
     let img = document.getElementById('imgShow');
     let title = document.getElementById('all');
+    let Plot = document.getElementById('plot');
+    let rating = document.getElementById('rating');
+
     let release = document.getElementById('release');
     title.innerHTML = (data.Title);
     img.src = (data.Poster); 
     release.innerHTML = (data.Released);
-//     let output = '<h2>'
-//     let title = Title;
-//     let img = Poster;
-//   console.log(Title);
-//   classAll.innerHTML = title; 
+    Plot.innerHTML = (data.Plot);
+    rating.innerHTML = (data.imdbRating);
+    hidden();
+
 });
 }
 
