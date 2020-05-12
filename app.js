@@ -3,7 +3,7 @@ window.onload = function() {
   document.querySelector(".hidden").style.display = 'none';
 };
 
-
+// Go button 
 
 let buttonCLick = document.querySelector(".btnSub").addEventListener("click",  function () {
 
@@ -15,6 +15,7 @@ let buttonCLick = document.querySelector(".btnSub").addEventListener("click",  f
     }
 });
 
+// hidden function program
 
 function hidden() {
     var x = document.querySelector(".hidden");
@@ -23,11 +24,10 @@ function hidden() {
     } else {
       x.style.display = "none";
     }
-  }
+}
 
 
-
-
+// to get movie from the db using api 
 
 function getmovies(searchTextall){
    
@@ -51,9 +51,9 @@ function getmovies(searchTextall){
 // })
 
 
-fetch(urlData)
-.then(response => response.json())
-.then(data => {
+  fetch(urlData)
+  .then(response => response.json())
+  .then(data => {
 
     console.log(data);
     console.log(data.Poster);
@@ -75,13 +75,9 @@ fetch(urlData)
 });
 }
 
+// use async await
 
-// add the value to api search 
-
-
-
-
-// taking the api result 
+// get the whole like many pages list 
 
 
 //showing it on display (using the creat node element )
