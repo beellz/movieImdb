@@ -5,31 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movies IMDB</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 
 
-<div id="mainall">
+
+<nav class="navbar navbar-default">
+    <div class="conatiner">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">MOVIES IMDB</a>
+        </div>
+    </div>
+</nav>
+
+<div class="conatiner">
+    <div class="jumbotron">
+        <h3 class="text-center">Search For Movies</h3>
+        <form id="searchForm">
+            <input type="text" class="form-control" id="searchText" placeholder="SEARCH MOVIES">
+        </form>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div id="movies" class="row">
+       
+    </div>
+</div>
+
+
+<!-- <div id="mainall">
     <form id="searchform">
         <input type="text" placeholder="search movies" id="searchText">
         <button type="submit" class="btnSub"> go </button>
 
     </form>
-</div>
-<div class= "hidden flow" >
+</div> -->
+<!-- <div class= "hidden flow" >
     <p id="all"></p>
     <p>release date</p>
     <p id="release"></p>
     <img id="imgShow" src="" alt="">
     <p>IMDB ID: </p>
     <p id="imdbId"></p> 
-</div>
+</div> -->
 <!-- have to change this to dynamic , not use hide element and all -->
     
 
 
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
