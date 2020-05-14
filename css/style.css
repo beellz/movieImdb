@@ -10,3 +10,15 @@
     height: 200px;
     width: 200px;
 }
+
+#movies img, #movies img {
+    width:100%;
+}
+
+#movies .col-md-3 img .well {
+height:800px;
+}
+
+#movies .col-md-3 img{
+height:240px;
+}
