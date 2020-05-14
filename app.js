@@ -68,7 +68,8 @@ function getMovie() {
         <li class="list-group-item"><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
         <li class="list-group-item"><strong>Director:</strong> ${movie.Director}</li>
         <li class="list-group-item"><strong>Writer:</strong> ${movie.Writer}</li>
-    <li class="list-group-item"><strong>Actor:</strong> ${movie.Actor}</li>
+    <li class="list-group-item"><strong>Actors:</strong> ${movie.Actors}</li>
+
 </ul>
 </div>
 </div>
@@ -77,7 +78,7 @@ function getMovie() {
     <h3>Plot</h3>
     ${movie.Plot}
 <hr>
-    <a href="http://imdb.com/title/${movie.imdb}" target="_blank" class="btn btn-priamry"> View iMDB</a>
+    <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-priamry"> View iMDB</a>
     <a href="index.html" class="btn btn-default" > GO Back To Search </a>
 </div>
 </div>
